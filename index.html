@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main-div">
+        <nav>
+            <button onclick="toggleTheme()" class="theme-button">
+                <svg 
+                 id="moon"
+                 
+                 xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"/></svg>
+                <svg id="sun"
+                class="hide"
+                xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M440-760v-160h80v160h-80Zm266 110-55-55 112-115 56 57-113 113Zm54 210v-80h160v80H760ZM440-40v-160h80v160h-80ZM254-652 140-763l57-56 113 113-56 54Zm508 512L651-255l54-54 114 110-57 59ZM40-440v-80h160v80H40Zm157 300-56-57 112-112 29 27 29 28-114 114Zm283-100q-100 0-170-70t-70-170q0-100 70-170t170-70q100 0 170 70t70 170q0 100-70 170t-170 70Z"/></svg>
+            </button>
+        </nav>
+        <div class="all-wrapper">
+            <div class="info-wrapper common-card">
+                <div class="info-widgets">
+                    <div class="details-wrapper">
+                        <img src="muse2cover.jpg" id="cv-image" alt="">
+                            <ul class="info-ul flex-col">
+                                <li class="bolder">
+                                    Iker Nambo
+                                </li>
+                                <li class="bolder">
+                                    18 Years Old
+                                </li>
+                                <li class="bolder">
+                                    Jr. Frontend Developer
+                                </li>
+                                <li class="bolder">
+                                    Technologies
+                            <ul class="tech-ul">
+                                <li>
+                                    <img src="React.png" class="tech-images" alt="React Image">
+                                </li>
+                                <li>
+                                    <img src="tailwind.png" class="tech-images" alt="Tailwind Image">
+                                </li>
+                                <li>
+                                    <img src="Next-JS.png" class="tech-images"  alt="Next JS image" id="next-image" alt="">
+                                </li>
+                                <li>
+                                    <img src="typescript.png" class="tech-images" alt="Typescript image">
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="details-wrapper contact-wrapper">
+                        
+                    <ul class="flex-col">
+                        <h3>Contact: </h3>
+                        <li>
+                            <div class="flex">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280 320-200v-80L480-520 160-720v80l320 200Z"/></svg>
+                                <p class="bolder">ikernamboproject@gmail.com</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="flex">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M162-120q-18 0-30-12t-12-30v-162q0-13 9-23.5t23-14.5l138-28q14-2 28.5 2.5T342-374l94 94q38-22 72-48.5t65-57.5q33-32 60.5-66.5T681-524l-97-98q-8-8-11-19t-1-27l26-140q2-13 13-22.5t25-9.5h162q18 0 30 12t12 30q0 125-54.5 247T631-329Q531-229 409-174.5T162-120Z"/></svg>
+                                <p class="bolder">+52 1 0000000000</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="flex">
+                               <img class="next-image" style="width: 24px; height: 24px;" src="githab.png" alt="">
+                                <p class="bolder">IkerNambo</p>
+                            <div/>
+                        </li>
+                    </ul>
+                    
+                </div>
+
+                <div class="details-wrapper skills-wrapper">
+                    <ul class="flex-col">
+                        <h3>Skills: </h3>
+                        <li>
+                            <p>Git / Github</p>
+                        </li>
+                        <li>
+                            <p>Responsive Design</p>
+                        </li>
+                        <li>
+                            <p>Fetch / Async Handling</p>
+                        </li>
+                        <li>
+                            <p>JSON Handling</p>
+                        </li>
+                    </ul>
+                </div>
+                
+                </div>
+               
+                <p id="p-margin">
+                    Hello! I'm Iker Nambo, an 18 year old passionate and dedicated Frontend Junior Developer experienced in ReactJS and Tailwind CSS, with knowledge on NextJS and Typescript. I love studying and learning new technologies.
+                </p>
+            </div>
+            
+            <div class="common-card projects-wrapper">
+                <h1 class="project-header">Projects:</h1>
+                <ul class="flex project-ul">
+                    <li>
+                        <a class="project-il" 
+                        target="_blank"
+                        href="https://guiltymusicikernambo.netlify.app/">
+                            <img src="musicapp.PNG" id="project-img" alt="">
+                            <h3>Music App</h3>
+                            <h4>Technologies used:</h4>
+                            <ul class="flex">   
+                            <li><img src="React.png" class="tech-images" alt="React image"></li>
+                            <li><img src="typescript.png" class="tech-images" alt="React image"></li>
+                            </ul>
+                        </a>
+                        
+                    </li>
+                    <li>
+                         <a class="project-il" 
+                         target="_blank"
+                         href="https://game-store-two-lyart.vercel.app/">
+                            <img src="gamestore.PNG" id="project-img" alt="">
+                            <h3>Game Store App</h3>
+                            <h4>Technologies used:</h4>
+                            <ul class="flex">   
+                            <li><img src="Next-JS.png" class="tech-images" id="next-image" alt=""></li>
+                            <li><img src="typescript.png" class="tech-images" alt="typescript image"></li>
+                            <li><img src="tailwind.png" class="tech-images" alt="tailwind image"></li>
+                            </ul>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="common-card flex footer">
+                <p>Made with ♥ By Iker Nambo</p>
+            </div>
+           
+        </div>
+
+    </div>
+     <script src="index.js"></script>
+</body>
+</html>
