@@ -7,7 +7,7 @@
     <title>Iker Nambo's CV</title>
 </head>
 <body>
-    <div class="main-div">
+    <div class="main-div" id="main-div">
         <nav>
             <button onclick="toggleTheme()" class="theme-button">
                 <svg 
@@ -103,6 +103,7 @@
                 <p id="p-margin">
                     Hello! I'm Iker Nambo, an 18 year old passionate and dedicated self taught Frontend Junior Developer experienced in ReactJS and Tailwind CSS, with knowledge on NextJS and Typescript. I love studying and learning new technologies.
                 </p>
+                <button id="download-btn" onclick="download()">Download</button>
             </div>
             
             <div class="common-card projects-wrapper">
@@ -120,6 +121,7 @@
                             <li><img src="typescript.png" class="tech-images" alt="React image"></li>
                             </ul>
                         </a>
+                        <a href="https://github.com/IkerNambo/Music-App">code</a>
                         
                     </li>
                     <li>
@@ -128,6 +130,7 @@
                          href="https://game-store-two-lyart.vercel.app/">
                             <img src="gamestore.PNG" id="project-img" alt="">
                             <h3>Game Store App</h3>
+                            
                             <h4>Technologies used:</h4>
                             <ul class="flex">   
                             <li><img src="Next-JS.png" class="tech-images" id="next-image" alt=""></li>
@@ -135,6 +138,7 @@
                             <li><img src="tailwind.png" class="tech-images" alt="tailwind image"></li>
                             </ul>
                         </a>
+                        <a href="https://github.com/IkerNambo/Game-Store">code</a>
                     </li>
                 </ul>
             </div>
@@ -146,6 +150,19 @@
         </div>
 
     </div>
+    <script src="https://unpkg.com/html2pdf.js@0.10.1/dist/html2pdf.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+    <script>
+         window.jsPDF = window.jspdf.jsPDF;
+    </script>
+
      <script src="index.js"></script>
+     <script src="download.js"></script>
 </body>
 </html>

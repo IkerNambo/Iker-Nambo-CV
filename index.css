@@ -42,9 +42,10 @@ svg{
     background-color: var(--main-color);
 }
 .all-wrapper{
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: 1fr auto auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
 }
 .info-widgets{
     display: flex;
@@ -167,6 +168,11 @@ svg{
     height: auto;
     border-radius: 10px;
 }
+#download-btn{
+    background-color: var(--secondary-color);
+    border: none;
+    border-radius: 10px;
+}
 .project-il{
     display: flex;
     flex-direction: column;
@@ -190,6 +196,7 @@ svg{
     margin: auto;
     padding: 0px;
     margin-bottom: 20px;
+    text-align: center;
 }
 .tech-used{
     
@@ -209,7 +216,7 @@ svg{
     grid-row: 3;
     width: 95%;
     bottom: 0;
-    margin-top: 5rem;
+    margin-top: 0;
 }
 
 @media (min-width: 500px) and (max-width: 1000px){ 
