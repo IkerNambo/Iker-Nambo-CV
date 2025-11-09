@@ -169,9 +169,13 @@ svg{
     border-radius: 10px;
 }
 #download-btn{
+    color: var(--text-color);
     background-color: var(--secondary-color);
     border: none;
     border-radius: 10px;
+    padding: 5px;
+    margin: auto;
+    border: solid white 2px;
 }
 .project-il{
     display: flex;
